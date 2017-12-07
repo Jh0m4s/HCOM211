@@ -11,6 +11,51 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
+/* Dropdown Button */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
 </style>
 <body>
 
@@ -18,10 +63,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">About Me</a>
-    <a href="project1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Project 1</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction2()">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="index.html">Project 1</a>
+      <a href="#">Rough Draft 1</a>
+      <a href="#">Rough Draft 2</a>
+    </div>
+  </div>
+    <!--- <a href="project1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Project 1</a> -->
     <a href="project2.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Project 2</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Project 3</a>
+
   </div>
 
   <!-- Navbar on small screens -->
@@ -29,6 +86,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a href="#" class="w3-bar-item w3-button w3-padding-large">Project 1</a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">Project 2</a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">Project 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Project 4</a>
   </div>
 </div>
 
@@ -98,6 +156,21 @@ function myFunction() {
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
+}
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction2() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
 }
 </script>
 
