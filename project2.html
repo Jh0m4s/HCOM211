@@ -66,39 +66,41 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">About Me</a>
   <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction2()">Project 1
+    <button class="dropbtn" onclick="show1()">Project 1
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content" id="myDropdown">
+    <div class="dropdown-content" id="myDropdown1">
       <a href="project1.html">Project 1</a>
       <a href="#">Rough Draft 1</a>
       <a href="#">Rough Draft 2</a>
+      <a href="#">Reflection</a>
     </div>
   </div>
     <!--- <a href="project1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Project 1</a> -->
     <div class="dropdown">
-      <button class="dropbtn" onclick="myFunction2()">Project 2
+      <button class="dropbtn" onclick="show2()">Project 2
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-content" id="myDropdown">
+      <div class="dropdown-content" id="myDropdown2">
         <a href="project2.html">Project 2</a>
         <a href="#">Rough Draft 1</a>
         <a href="#">Rough Draft 2</a>
+        <a href="#">Reflection</a>
       </div>
     </div>
     <div class="dropdown">
-      <button class="dropbtn" onclick="myFunction2()">Project 3
+      <button class="dropbtn" onclick="show3()">Project 3
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-content" id="myDropdown">
+      <div class="dropdown-content" id="myDropdown3">
         <a href="project3.html">Project 3</a>
         <a href="#">Rough Draft 1</a>
         <a href="#">Rough Draft 2</a>
+        <a href="#">Reflection</a>
       </div>
     </div>
-
-
   </div>
+
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
@@ -246,6 +248,13 @@ function myFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function show1() {
+    document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
     var myDropdown1 = document.getElementById("myDropdown1");
@@ -254,6 +263,13 @@ window.onclick = function(e) {
       }
   }
 }
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function show2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
     var myDropdown2 = document.getElementById("myDropdown2");
@@ -261,6 +277,11 @@ window.onclick = function(e) {
         myDropdown2.classList.remove('show');
       }
   }
+}
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function show3() {
+    document.getElementById("myDropdown3").classList.toggle("show");
 }
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
