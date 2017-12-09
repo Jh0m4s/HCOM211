@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<title>HCOM 211 Projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+/* Dropdown Button */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">About Me</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="show1()">Project 1
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown1">
+      <a href="project1.html">Project 1</a>
+      <a href="#">Rough Draft 1</a>
+      <a href="#">Rough Draft 2</a>
+      <a href="#">Reflection</a>
+    </div>
+  </div>
+    <!--- <a href="project1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Project 1</a> -->
+    <div class="dropdown">
+      <button class="dropbtn" onclick="show2()">Project 2
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown2">
+        <a href="project2.html">Project 2</a>
+        <a href="#">Rough Draft 1</a>
+        <a href="#">Rough Draft 2</a>
+        <a href="#">Reflection</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="show3()">Project 3
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown3">
+        <a href="project3.html">Project 3</a>
+        <a href="#">Rough Draft 1</a>
+        <a href="#">Rough Draft 2</a>
+        <a href="#">Reflection</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Project 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Project 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Project 3</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">HCOM 211</h1>
+  <p class="w3-xlarge">Joseph Thomas</p>
+  <!-- <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button> -->
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Introduction</h1>
+      <p>In recent discussions in the judicial branch, a controversial issue has rekindled in congress on whether or not partisan gerrymandering should be used by the majority party of the legislative branch. One one hand some argue that Gerrymandering should be considered because it has been in our government for a long time, and also how gerrymandering does not really determine too much of the outcome of elections. On the other hand, some argue that partisan gerrymandering is a bad thing that kills the competitiveness of elections. According to this view it means that the legislative body in that is currently  in congress stays  in congress even before ballots are casted. In sum, then, the issue is not whether partisan gerrymandering is legal or not legal, but instead whether or not gerrymandering should be implemented. My view is that gerrymandering should be eliminated because it provides an unfair advantage to the majority party during elections, kills democracy in America, and lastly increases party polarization.
+      </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Provides an Unfair Advantage to Majority Party</h1>
+      <h2>Gives Majority More Power During Elections</h2>
+      <p>When making a government I would figure that you should not only listen to the majority, but also listen to a good portion of the people in the minority Although the majority has the most amount of people in it, I do not believe that the majority should not be the only one herd in a country. I believe that the minority should not be at a complete loss during the election period. Steven Semeraro author of the paper, Partisan Gerrymandering: Is There No Shame in It or Have Politicians Become Shameless?, writes “Rigging a district map to put a party with a slight majority of the statewide vote – or even one with only minority support – into overwhelming control of the legislature fundamentally differs from the other perks of victory. All of the others preserve a democratic check on power. Partisan gerrymandering, by contrast, undermines that check.” The essence of Semeraro’s argument is that partisan gerrymandering has no way politically partisan gerrymandering can be opposed. There are many different ways this ends up affecting us, such as how it is a huge perk for anyone in the legislative branch because it allows the current congress members of the majority party to keep their position along with adding new members of the same party. Later Semeraro also states how, “The party that wins control of the legislature – appropriately – obtains the tools necessary to advance its policies. Controlling the legislative agenda and the makeup of committees enables the winning party to make good on its campaign promises. But critically, further election victories will depend on the success of the policies that the party implements.”(Semeraro) Semerano’s point is that if the majority party wins the election that also redraws the boundaries, then the majority party is also able to secure the next few elections because of it. Whether it is a favorite party or not, we still have to agree that later elections will be less competitive just because a winning party is able to redraw boundaries, which means that voters can be divided up into winning districts for the majority party. Lastly, Semerano also points out in the article how “Gerrymandering similarly reduces the need to legislate wisely because it places a thumb on the scale of future elections, insulating the legislative agenda from fair evaluation by structuring districts in a way that makes it extremely difficult to flip control even if the controlling party’s agenda is unpopular.”(Semeraro). Basically Semeraro is warning us that if we use gerrymandering then the legislature is more dependent on how the election goes than the legislature actually being able to make sound laws. The author extends his argument to state how along with the legislature not making sound laws it will also be very hard to get that party out of congress because they will just constantly be able to keep redrawing the district lines. I completely agree with the author on this, the being able to obtain this power by just being the majority party is inequitable, and truly should be revised. If the opinion of the majority party is not favored by the rest of the nation, it becomes very difficult to remove the unfavorable opinion out of the government, and I think this should be changed.
+      </p>
+      <h2>Discriminates against the minority party from rejecting policies the majority proposes.</h2>
+      <p>One of the biggest factors of gerrymandering is that it will naturally block any other ways to challenge the majority party’s policies. In a paper published by Devin Caughey, Chris Tausanovitch, and Christopher Warshaw titled Partisan Gerrymandering and the Political Process: Effects on Roll-Call Voting and State Policies, they claim, “If the relationship between votes and seats systematically advantages one party over another, then some citizens will enjoy more influence—more “voice”—over government policies than others.” (Caughey et al.). What the authors are getting at is the concept that if the majority happens to win by a vast difference, then some citizens will enjoy more influence over government policies. Although I agree that more influence will definitely become apparent I would not say that the people would always “enjoy” more influence. A recent example of this is how the Republican Party, although they are the majority, is trying to shut down net neutrality, in which many internet users are extremely peeved at. Although many Americans are mad at this, there is still a high possibility that this will pass, mainly because the majority is Republican, and the majority party will vote for the majority party’s policies. Another way that gerrymandering discriminates against minority parties is discussed in the same article. The authors state,
+      In sum, partisan gerrymandering does not merely make it easier for one party to win elections. Rather, by biasing the relationship between votes and seats, it also undermines congruence to voters’ preferences, skewing the ideological composition of the legislature and the ideological character of policymaking away from the preferences of the median voter (and thus from a majority of the electorate) (Caughey et al.).
+      To put it into simpler terms, the authors are stating that if the relationship between votes and seats is undermined then the voter’s preferences are not cared about and become forgotten about by congress. The legislature becomes more concerned about itself than the concerns of the people they are making laws for. This then will cause the perspective of the legislature to change away from the ideas of the voters and more towards what will benefit my party. This as a whole is just really angering to see how something that should be working for us is instead working only for themselves and their own party.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Ruins Democracy</h1>
+      <h2>Takes Power Away From People</h2>
+      <p>In a democracy the source of all power should come from the people themselves. In America, I believe that this is not the case at all, and I also believe gerrymandering really breaks our democracy. In an article from Huffington Post titled, Gerrymandering Is A Threat To Our Republic, author Jane Dailey, states that “Under this system[the electoral college system], the winner of the national popular vote has lost the office twice in the last four elections, in 2000 and 2016. This is, to put it mildly, a problem. Indeed, in the last seven presidential elections the Republican candidate has won the popular vote only once — George W. Bush in 2004. When the will of the majority of the people is thwarted, faith in the political system is eroded.” (Dailey).In making this comment, Dailey is urging us to understand the concept that the people have not been at the center of America’s political system by showing us that the popular vote has been contradicted 2 times in 4 years, and only once in the last 7 years Republicans have won the popular vote. Although I disagree with her possibly suggesting that the Republicans have a lot to do with the unfavorable outcome, I do agree with her when she stated how when the outcome is not in favor of the majority then people lose faith in the system. If we do not have a say in what we want in our country then our government becomes a failure. Another set of authors who agree are The LNP Editorial Board who also quote Alex Rich. In their article, A Needed and Important Step Toward Ending Partisan Gerrymandering, they claimed that,
+      As much as we all may want to give our chosen team an advantage, effective democracy relies on collaboration and compromise, not endless partisan deadlock,” wrote Alex Rich, a volunteer with Fair Districts PA, in an op-ed for LNP in July. He’s right, of course. When losing your seat in an upcoming election is not a worry, where’s the incentive to compromise? We all know the answer because we’ve seen, and are seeing, exactly what happens. The people’s business grinds to a halt. Bills get stuck in committee. Voters feel marginalized.(The LNP Editorial Board)
+      In summary, The LNP Editorial Board quotes Rich as stating that we treat our political parties almost like sports teams, and as much as, and we want our “team” to win, we still have to agree that democracy takes both “teams” for collaboration and compromise. The board, agreeing with Rich, expands upon her statement by saying that since no one wants to compromise nothing gets passed and the voters feel as if they are doing nothing in their government. I completely agree with both authors on this issue, and as a whole, it discourages voters from feeling significant which as a result kills the democracy from the root.
+
+      </p>
+
+      <h2>Some Possible Steps to Fix This</h2>
+      <p>After hearing all of that repairing our government seems pretty hopeless, but I can assure you that all is still not lost. A few authors and myself believe that if we can fix gerrymandering then things may appear less useless and, in fact, maybe useful. The first of these authors is Jeff Reichert who wrote the article, How Gerrymandering Undermines Democracy, to which he wrote “...in a democracy there will always be winners and losers. And our system is not designed to provide everyone the representation they want, but the possibility of participating in a fair structure that churns out a representative body. Reforming the process of redistricting is a step toward creating the kind of government we learned about in civics class.”(Reichert). In short, Reichert is saying that no matter what period of time we look at there will always be “winners” and “losers” of elections, but what makes it ok to lose is when it was fair, and that your candidate had a chance to win. If we end up having this then maybe we can be one step better to the “government we learned about in civics class”. Although I don’t think we'll ever get to that utopia of a government I still completely agree with him on the matter of making the election system more fair. I believe that more people will be inclined to vote and partake in voting, and an excellent way to make it more fair is to get rid of partisan gerrymandering. Another author who agrees with me is Mike Collier who had written the article, Gerrymandering is Poisoning Our Democracy. Collier argues that, “By ending gerrymandering, we can end, for once and for all, the gridlock in Washington that’s crippling our nation. Ordinary Americans can make a vital contribution to the success and longevity of our constitutional democracy by raising their voices and demanding an amendment to the United States Constitution ending gerrymandering once and for all.”(Collier). The essential point of Collier’s statement is that ordinary Americans can make the difference and stop gerrymandering which will restore the “longevity of our constitutional democracy”. I agree with Collier’s stance on gerrymandering for the sole reason that it is killing our democracy. Without our democracy we are just people under some other people’s rule. We really do not have any say if we lose our democracy ,and I believe this is a crucial reason to end gerrymandering.
+      </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Increases Polarization</h1>
+      <h2>More interstate polarization</h2>
+      <p> As we get so surrounded into what our parties say and believe, Polarization begins to rise and even worse we begin to become divided as a country, forget that we are Americans, and forget our common goal of unity as a nation. One set of authors who agree with this are Nolan McCarty, Keith T. Poole, and Howard Rosenthal who wrote a paper titled, Does Gerrymandering Cause Polarization?, where they stated, “Partisanship would appear to make a compelling circumstantial case for an increase in polarization… Simultaneously, electoral competitiveness declines in Congress. It seems reasonable to conclude that the two phenomena are related and that the consequence is greater polarization.”(McCarty et al.) The idea the authors are getting at is,  political parties tend to blindly follow its own party, and in turn this makes the districts more aggressive towards each other. I totally agree with this and it makes sense because in a state like California where the northern half is much more Republican and the southern portion tends to be more Democratic. I really don’t know how we are still a single state with the growing tensions between the northerners and the southerners of California. Another author who agrees with this is Fred Dews. Dews, in his article  A Primer on Gerrymandering and Political Polarization, states that,
+While scholars agree that gerrymandering is not the leading cause of political polarization, and that eliminating it would not necessarily increase legislative competitiveness, they agree that partisan redistricting can amplify partisan divides, and that efforts should be taken to increase transparency and decrease partisan influence in the redistricting process.(Dews)
+Dews claims that even though gerrymandering is not the lead cause for polarization, it still can help slow down the process. He then urges us to take some action to try to stop gerrymandering to increase transparency and decrease a party’s influences on people I completely agree that with this. Although stopping gerrymandering will not entirely solve all problems with polarization, it can still accomplish a lot such as being able to see not what my party is doing correctly, but instead what is in the best interest of my state. If we can take these steps then I believe that we are on our way to fixing many problems with today's America by starting with the states themselves.</p>
+      <h2>Polarization in Political Factions</h2>
+      <p>Although polarization among the states is a big problem, I will also make the claim that the polarization in political factions is just as important. An author that agrees that this is important is Seth Masket. Masket has written the paper called Mitigating Extreme Partisanship in an Era of Networked Parties: An Examination of Various Reform Strategies. In this paper Masked believes that, “…when one party controls both chambers of the legislature and the executive branch (as was the condition in more than 35 states after the 2012 election), it may make more sense for the majority party to seek to increase its numbers in the legislature rather than make every district safer. ”(Masked). Masket describes a process that a lot of political parties are aiming for, which consists of creating situations to obtain more legislators for the main party. As a whole this is despicable because this kills the spirit of elections, along with the whole point of elections, to get the people's opinion on who they want in charge and how the people want this country to run. The author Dews also makes a good point as well by saying how,
+      The bigger problem with relying on gerrymandering reform to increase competition is that in recent years Americans seem to have “sorted themselves” into like-minded communities. … In recent years, red states have gotten redder, blue states bluer and the same holds for counties. Thus even in the unlikely event of across the board redistricting reform, the increase in competitive congressional districts may not be very big.(Dews)
+      Dews really hammers in the point of how Americans choose themselves as for one side or another, saying that over the years, the republican states become more republican and the democratic states become more democratic, and honestly it’s sad to say, but pretty true. More and more people do not see all sides of the story and just take news for face value.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Counter-Arguments</h1>
+      <h2>Point 1</h2>
+      <p>Yet some readers may challenge my view by insisting that districting causes many problems in general. People such as Hendrik Hertzberg in the article, Mandate With Destiny states how “Gerrymandering routinely gets blamed for such mismatches, but that’s only part of the story. Far more important than redistricting is just plain districting: because so many Democrats are city folk, large numbers of Democratic votes pile up redundantly in overwhelmingly one-sided districts.” (Hertzberg). But is it necessarily correct to think that a whole political faction loses elections based on just where they live? Is it always the case, as I have been suggesting, that instead it is a problem with how we draw the district lines? As a whole I think that drawing lines to favors land over the amount of people per district is quite preposterous, and does not seem logical in the slightest.
+      </p>
+
+      <h2>Point 2</h2>
+      <p>Of course many will disagree on the grounds that gerrymandering, at its core, kills democracy. One such author, Philip Bump, quotes McGhee and makes his own comment in the article No, Gerrymandering is Not Destroying Democracy. Bump states that,
+        “Democrats also do worse because they are more concentrated in urban areas," he wrote. "They 'waste' votes on huge margins there, when the party could put many of those votes to better use in marginal seats." In other words, Democrats move to cities and overwhelmingly vote for Democrats. If Democrats want to retake the House, they should move to Wyoming.(Bump).
+        Some people, including Bump,  may say that simply people “Aren’t playing the game correctly”, then I must ask you the question, since when did the political system become a game? If the political system is a game then, who is playing it? At which point it starts to become more and more about how this said player wins the game then about making America a solid democracy. This “game” should really be played toward the strategy of America, and making it a better country, than it is about two sides constantly finding new ways to topple over each other's policies
+      </p>
+
+      <h2>Point 3</h2>
+      <p>Although some readers may object, I believe that gerrymandering is somewhat of a domino effect that causes polarization to increase to drastic levels, and I still believe that there is a breaking point for any polarization. Masket, an author I whose work I mentioned earlier, claims in the same paper that,
+Campaign finance reform is usually rooted in a broad desire to simply limit the role of money in politics and thus undermine corruption, with a reduction of polarization seen as a useful secondary objective. Yet in most of these cases, both the primary and secondary objectives fail to obtain; spending continues to increase, the parties continue to polarize, shrill voices grow ever more shrill.(Masket)
+He discusses how gerrymandering may not be the root cause of all of this and that the parties themselves are corrupted and make promises that never actually get fulfilled. Although I agree with him about how the parties will keep polarizing, I believe that at some point the people will break the polarizing bonds to agree on an issue together. An excellent example of this is how so much of the American population agrees that net neutrality is a really horrible idea. It took some time, but Americans on all sides of the political spectrum agree on something, which is crazy to think about. I believe that this occurred because a political party is trying to do something that affects all citizens whether they are a 10 year-old child, a graduate student, 75 year-old woman, republican, democrat, hispanic, or white: it affects us all.
+      </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Conclusion</h1>
+      <p> Gerrymandering is an issue that is important to every, single, American because it gives the majority party too much power, kills democracy in America, and lastly increased party polarization. This issue is important to every American because it determines how people who come into power, which not only is a reflection of the American people, but also determines will who make the decisions for the country. Given time I believe that partisan gerrymandering will crumble in the next few years mainly because it just kills the purpose of elections, but time will tell if this will actually happen. If I am right then hopefully we will be enjoying a more fair election, but if this does not pass than I am horrified for the years to come. I hope the discussion in the Judicial branch can really help some new facts come and speak out against it. Sadly, for all we know people who want to play the game, are just going to keep playing the game, not stopping for many years until the people have had enough.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function show1() {
+    document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown1 = document.getElementById("myDropdown1");
+      if (myDropdown1.classList.contains('show')) {
+        myDropdown1.classList.remove('show');
+      }
+  }
+}
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function show2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown2 = document.getElementById("myDropdown2");
+      if (myDropdown2.classList.contains('show')) {
+        myDropdown2.classList.remove('show');
+      }
+  }
+}
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function show3() {
+    document.getElementById("myDropdown3").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown3 = document.getElementById("myDropdown3");
+      if (myDropdown3.classList.contains('show')) {
+        myDropdown3.classList.remove('show');
+      }
+  }
+}
+</script>
+
+</body>
+</html>
